@@ -1,0 +1,25 @@
+
+
+header
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    padding:20px;
+    border:1px solid red;
+}
+
+
+.Logo
+{
+    width:162px;
+    height:44;
+}
+
+
+
+
+
