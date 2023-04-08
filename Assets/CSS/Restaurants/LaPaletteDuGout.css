@@ -3,12 +3,15 @@
 .MainContent
 {
     width:100%;
+    height:fit-content;
 }
 
 .ImageResto
 {
     width:100%;
     height:275px;
+    position:absolute;
+    top:68px;
     z-index: 1;
 }
 
@@ -21,12 +24,13 @@
     align-items: center;
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
-    position:absolute;
-    top:0;
-    margin-top:290px;
+    margin-top:calc(276px - 68px);
     padding:13px;
     padding-top:30px;
     padding-bottom: 40px;
+    z-index: 10;
+    position: relative;
+
 }
 .MenuTitle
 {
@@ -64,12 +68,12 @@
     background-color:#99E2D0;
 }
 
-.MenuItem, .MenuItem_SubtitleAndPrice
+.RestoMenuItem, .MenuItem_SubtitleAndPrice
 {
     display: flex;
     width:100%;
 }
-.MenuItem
+.RestoMenuItem
 {
     flex-direction: column;
     justify-content: start;
@@ -77,27 +81,29 @@
     padding:15px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    margin-bottom: 13px;
 }
+
 .MenuItem_SubtitleAndPrice
 {
     justify-content: space-between;
 }
 
-.MenuItem_Title
+.RestoMenuItem_Title
 {
     font-weight: bold;
     margin-bottom:15px;
     font-size: 18px;
 }
-.MenuItem_Subtitle, .MenuItem_Price
+.RestoMenuItem_Subtitle, .RestoMenuItem_Price
 {
     font-size: 15px;
 }
-.MenuItem_Subtitle
+.RestoMenuItem_Subtitle
 {
     font-weight: 300;
 }
-.MenuItem_Price
+.RestoMenuItem_Price
 {
     font-weight: bold;
 }
