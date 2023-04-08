@@ -1,0 +1,50 @@
+
+footer
+{
+    width:100%;
+    padding:22px;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top:20px;
+}
+
+.FooterLogo
+{
+    width:120px;
+    height:27px;
+}
+
+footer svg path
+{
+    fill:#fff;
+}
+
+footer .fa-solid
+{
+    color:#fff;
+    width:20px;
+}
+
+.MenuFooter
+{
+    margin-top:25px;
+}
+
+.FooterLink
+{
+    text-decoration:none;
+    color:#fff;
+    text-align: left;
+    font-weight: 400;
+}
+.FooterLinkBold
+{
+    font-weight: bold;
+}
+
+.MenuItem
+{
+    margin-bottom:10px;
+}
