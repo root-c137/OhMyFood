@@ -32,6 +32,18 @@
     position: relative;
 
 }
+.HeaderMenu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.HeaderMenu .fa-heart
+{
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
 .MenuTitle
 {
     width:100%;
@@ -122,4 +134,5 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+
 
