@@ -265,12 +265,11 @@
     text-align: center;
     font-size: 14px;
 }
-.RestoCard_Bottom .fa-heart
+.RestoCard_Bottom .ButtonHeart_Bg
 {
-
-    font-size: 25px;
-    margin-top:3px;
-    margin-right: 15px;
+    font-size: 15px;
+    margin-top:5px;
+    margin-right: 5px;
     color:#000;
     z-index: 30;
 }
