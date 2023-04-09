@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="../Assets/CSS/Header/Header.css"/>
     <link rel="stylesheet" href="../Assets/CSS/Header/HeaderResto.css"/>
     <link rel="stylesheet" href="../Assets/CSS/Button/Button.css"/>
+    <link rel="stylesheet" href="../Assets/CSS/Heart/Heart.css"/>
+
 
 
     <link rel="stylesheet" href="../Assets/CSS/Animations/Animations.css"/>
     <link rel="stylesheet" href="../Assets/CSS/Restaurants/Restaurants.css"/>
     <link rel="stylesheet" href="../Assets/CSS/Footer/Footer.css"/>
-
 
    </head>
   <body>
@@ -40,7 +41,12 @@
         <div class="Menu">
             <div class="HeaderMenu">
                 <h2 class="MenuTitle">La Palette du goût</h2>
-                <i class="fa-sharp fa-regular fa-heart"></i>
+                <div class="ButtonHeart_Bg">
+                    <input type="checkbox" name="Like" id="Like"/>
+                    <label for="Like">
+                        <i class="fa-regular fa-heart"></i>
+                    </label>
+                </div>
             </div>
 
             <form class="MenuForm" method="post" action="#">

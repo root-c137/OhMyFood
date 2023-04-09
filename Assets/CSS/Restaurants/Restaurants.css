@@ -43,10 +43,10 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.HeaderMenu .fa-heart
+.HeaderMenu .ButtonHeart_Bg
 {
-    margin-right: 20px;
-    font-size: 1.5rem;
+    margin-right: 40px;
+    font-size: 1.4rem;
 }
 .MenuTitle
 {
