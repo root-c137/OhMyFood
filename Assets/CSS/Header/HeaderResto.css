@@ -1,0 +1,16 @@
+
+header
+{
+    flex-direction: row;
+    position: relative;
+}
+
+.fa-arrow-left
+{
+    position:absolute;
+    left:40px;
+    top:50%;
+    transform: translate(0, -50%);
+    font-size: 1.5rem;
+    margin-top:0;
+}
