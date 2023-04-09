@@ -102,9 +102,11 @@
 }
 .RestoMenuItem_Left
 {
-    width:100%;
+    width:98%;
     height: 100%;
     padding:18px;
+    border-radius: 15px 0 0 15px;
+
 
 }
 
@@ -153,12 +155,15 @@
     border-radius: 0px 15px 15px 0px;
     background-color: #99E2D0;
     display: flex;
-    visibility: visible;
+    visibility: hidden;
     align-items: center;
     justify-content: center;
     position:absolute;
     right:0;
     z-index: 1;
+    transition-property: visibility;
+    transition-duration: 300ms;
+    transition-timing-function:ease-in-out;
 }
 
 .RestoMenuItem input[type="checkbox"]
@@ -169,9 +174,9 @@
 {
     z-index: 10;
     background-color: #fff;
-    transition-property: width;
-    transition-duration: 500ms;
-    transition-timing-function:ease-out;
+    transition-property: width, border-radius;
+    transition-duration: 300ms;
+    transition-timing-function:ease-in-out;
 }
 
 .Check .fa-circle-check
@@ -183,7 +188,11 @@
 
  .RestoMenuItem input[type="checkbox"]:checked  ~ label
 {
-    width:calc(100% - 59px);
+    width:calc(100% - 59px)
+}
+.RestoMenuItem input[type="checkbox"]:checked  ~ .Check
+{
+    visibility: visible;
 }
 
 
