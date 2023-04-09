@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../Assets/CSS/Header/HeaderResto.css"/>
 
 
+    <link rel="stylesheet" href="../Assets/CSS/Animations/Animations.css"/>
     <link rel="stylesheet" href="../Assets/CSS/Restaurants/LaPaletteDuGout.css"/>
     <link rel="stylesheet" href="../Assets/CSS/Footer/Footer.css"/>
 
@@ -40,95 +41,157 @@
                 <h2 class="MenuTitle">La Palette du goût</h2>
                 <i class="fa-sharp fa-regular fa-heart"></i>
             </div>
+
+            <form class="MenuForm" method="post" action="#">
+
+                <section class="MenuSection Entrees">
+                    <h3 class="SectionTitle">Entrées</h3>
+                    <div class="GreenBorder"></div>
+                  
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="FricasseEscargots"/>
+                            <label class="RestoMenuItem_Left" for="FricasseEscargots">
+                                <h4 class="RestoMenuItem_Title">Fricassée d'escargots</h4>
+                                <div class="MenuItem_SubtitleAndPrice">
+                                    <p class="RestoMenuItem_Subtitle">Au piment d'Espelette</p>
+                                    <p class="RestoMenuItem_Price">25€</p>
+                                </div>
+                            </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="FoieGras"/>
+                        <label class="RestoMenuItem_Left" for="FoieGras">
+                            <h4 class="RestoMenuItem_Title">Foie gras de canard mi-cuit</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Et ses copeaux de truffe noire</p>
+                                <p class="RestoMenuItem_Price">35€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="OeufPlat"/>
+                        <label class="RestoMenuItem_Left" for="OeufPlat">
+                            <h4 class="RestoMenuItem_Title">Oeuf au plat</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Assaisonné à la truffe sur lit de caviar</p>
+                                <p class="RestoMenuItem_Price">20€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="MenuSection Plats">
+                    <h3 class="SectionTitle">Plats</h3>
+                    <div class="GreenBorder"></div>
+    
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="FiletBoeuf"/>
+                        <label class="RestoMenuItem_Left" for="FiletBoeuf">
+                            <h4 class="RestoMenuItem_Title">Filet de boeuf aux herbes</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Accompagné de sa rimbabelle de légumes</p>
+                                <p class="RestoMenuItem_Price">40€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+    
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="ParmentierBoeuf"/>
+                        <label class="RestoMenuItem_Left" for="ParmentierBoeuf">
+                            <h4 class="RestoMenuItem_Title">Parmentier de queue de boeuf</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">A la truffe noire sur sa purée de panais</p>
+                                <p class="RestoMenuItem_Price">35€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+    
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="FiletTurbot"/>
+                        <label class="RestoMenuItem_Left" for="FiletTurbot">
+                            <h4 class="RestoMenuItem_Title">Filet de turbot</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Aux agrumes</p>
+                                <p class="RestoMenuItem_Price">44€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="MenuSection Desserts">
+                    <h3 class="SectionTitle">Desserts</h3>
+                    <div class="GreenBorder"></div>
+    
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="ParisBrest"/>
+                        <label class="RestoMenuItem_Left" for="ParisBrest">
+                            <h4 class="RestoMenuItem_Title">Paris-Brest</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Revisité</p>
+                                <p class="RestoMenuItem_Price">18€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+    
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="MacaronChoco"/>
+                        <label class="RestoMenuItem_Left" for="MacaronChoco">
+                            <h4 class="RestoMenuItem_Title">Macaron au chocolat d'exception</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Et glace à la vanille de Madagascar</p>
+                                <p class="RestoMenuItem_Price">22€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+    
+                    <div class="RestoMenuItem">
+                        <input type="checkbox" name="Menu" id="MousseChoco"/>
+                        <label class="RestoMenuItem_Left" for="MousseChoco">
+                            <h4 class="RestoMenuItem_Title">Mousse au chocolat</h4>
+                            <div class="MenuItem_SubtitleAndPrice">
+                                <p class="RestoMenuItem_Subtitle">Au piment d'Espelette et à la truffe noire</p>
+                                <p class="RestoMenuItem_Price">23€</p>
+                            </div>
+                        </label>
+                        <div class="Check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                    
+                </section>
+    
+                <button class="BCommander">Commander</button>
+
+
+            </form>
           
           
-            <section class="MenuSection Entrees">
-                <h3 class="SectionTitle">Entrées</h3>
-                <div class="GreenBorder"></div>
-              
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Fricassée d'escargots</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Au piment d'Espelette</p>
-                        <p class="RestoMenuItem_Price">25€</p>
-                    </div>
-                </div>
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Foie gras de canard mi-cuit</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Et ses copeaux de truffe noire</p>
-                        <p class="RestoMenuItem_Price">35€</p>
-                    </div>
-                </div>
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Oeuf au plat</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Assaisonné à la truffe sur lit de caviar</p>
-                        <p class="RestoMenuItem_Price">20€</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="MenuSection Plats">
-                <h3 class="SectionTitle">Plats</h3>
-                <div class="GreenBorder"></div>
-
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Filet de boeuf aux herbes</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Accompagné de sa rimbabelle de légumes</p>
-                        <p class="RestoMenuItem_Price">40€</p>
-                    </div>
-                </div>
-
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Parmentier de queue de boeuf</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">A la truffe noire sur sa purée de panais</p>
-                        <p class="RestoMenuItem_Price">35€</p>
-                    </div>
-                </div>
-
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Filet de turbot</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Aux agrumes</p>
-                        <p class="RestoMenuItem_Price">44€</p>
-                    </div>
-                </div>
-                
-            </section>
-            <section class="MenuSection Desserts">
-                <h3 class="SectionTitle">Desserts</h3>
-                <div class="GreenBorder"></div>
-
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Paris-Brest</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Revisité</p>
-                        <p class="RestoMenuItem_Price">18€</p>
-                    </div>
-                </div>
-
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Macaron au chocolat d'exception</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Et glace à la vanille de Madagascar</p>
-                        <p class="MenuItem_Price">22€</p>
-                    </div>
-                </div>
-
-                <div class="RestoMenuItem">
-                    <h4 class="RestoMenuItem_Title">Mousse au chocolat</h4>
-                    <div class="MenuItem_SubtitleAndPrice">
-                        <p class="RestoMenuItem_Subtitle">Au piment d'Espelette et à la truffe noire</p>
-                        <p class="RestoMenuItem_Price">23€</p>
-                    </div>
-                </div>
-                
-            </section>
-
-            <button class="BCommander">Commander</button>
+          
         </div>
 
   </main>

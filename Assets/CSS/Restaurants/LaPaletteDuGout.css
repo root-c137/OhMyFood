@@ -15,13 +15,17 @@
     z-index: 1;
 }
 
-.Menu
+.Menu, .MenuForm
 {
     width:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.Menu
+{
+
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
     margin-top:calc(276px - 68px);
@@ -30,8 +34,8 @@
     padding-bottom: 40px;
     z-index: 10;
     position: relative;
-
 }
+
 .HeaderMenu
 {
     width: 100%;
@@ -87,13 +91,21 @@
 }
 .RestoMenuItem
 {
-    flex-direction: column;
+    height:78px;
+    flex-direction: row;
     justify-content: start;
     background-color: #fff;
-    padding:15px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-bottom: 13px;
+    position: relative;
+}
+.RestoMenuItem_Left
+{
+    width:100%;
+    height: 100%;
+    padding:18px;
+
 }
 
 .MenuItem_SubtitleAndPrice
@@ -120,7 +132,6 @@
     font-weight: bold;
 }
 
-
 .BCommander
 {
     width:60%;
@@ -134,5 +145,49 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+.Check
+{
+    width:59px;
+    height:100%;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #99E2D0;
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    right:0;
+    z-index: 1;
+}
+
+.RestoMenuItem input[type="checkbox"]
+{
+    display: none;
+}
+.RestoMenuItem label
+{
+    z-index: 10;
+    background-color: #fff;
+    transition-property: width;
+    transition-duration: 500ms;
+    transition-timing-function:ease-out;
+}
+
+.Check .fa-circle-check
+{
+    color:#fff;
+    font-size: 25px;
+}
+
+
+ .RestoMenuItem input[type="checkbox"]:checked  ~ label
+{
+    width:calc(100% - 59px);
+}
+
+
+
+
 
 
