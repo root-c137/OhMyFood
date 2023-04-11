@@ -12,8 +12,8 @@ footer
 
 .FooterLogo
 {
-    width:120px;
-    height:27px;
+    width:100px;
+    height:17px;
 }
 
 footer svg path
@@ -25,6 +25,13 @@ footer .fa-solid
 {
     color:#fff;
     width:20px;
+    margin-right:10px;
+}
+
+.MenuFooter, .MenuList, .MenuItemIcon
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .MenuFooter
@@ -32,12 +39,24 @@ footer .fa-solid
     margin-top:25px;
 }
 
+.MenuItemIcon
+{
+    flex-direction: row;
+}
+
+.MenuList
+{
+    margin-bottom: 4px;
+}
+
+
 .FooterLink
 {
     text-decoration:none;
     color:#fff;
     text-align: left;
     font-weight: 400;
+    margin-bottom: 8px;
 }
 .FooterLinkBold
 {
@@ -47,4 +66,63 @@ footer .fa-solid
 footer .MenuItem
 {
     margin-bottom:10px;
+}
+
+
+@media (min-width:740px)
+{
+  
+  .MenuFooter, .MenuList, footer
+  {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  footer
+  {
+   flex-direction: row-reverse;
+   align-items: end;
+   justify-content: end;
+   font-size: 0.9rem;
+  }
+
+  .FooterLink
+  {
+    margin-bottom: 0;
+    margin-right:5px;
+    margin-left:5px;
+  }
+  .MenuList
+  {
+    margin-right: 20px;
+  }
+  .MenuItemIcon
+  {
+    margin-right: 10px;
+  }
+  .MenuItemIcon .FooterLink
+  {
+    margin:0;
+  }
+  footer .fa-solid
+  {
+    margin-right:5px;
+  }
+
+  .MenuList_Top
+  {
+    line-height: 1rem;
+  }
+  .MenuList_Bottom
+  {
+    line-height: 0.8rem;
+  }
+
+  .FooterLogo
+  {
+    margin-bottom: 2px;
+    margin-right:20px;
+    margin-left:20px;
+  }
+
+
 }
