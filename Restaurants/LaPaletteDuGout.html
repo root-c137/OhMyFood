@@ -37,7 +37,9 @@
   </header>
 
   <main class="MainContent">
-        <img class="ImageResto" src="../Assets/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=".."/>
+        <div class="ImageRestoContainer">
+            <img class="ImageResto" src="../Assets/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=".."/>
+        </div>
         <div class="Menu">
             <div class="HeaderMenu">
                 <h2 class="MenuTitle">La Palette du goût</h2>
@@ -216,20 +218,26 @@
       </svg>    
       
       <nav class="MenuFooter">
-        <ul>
-          <li class="MenuItem">
+
+        <div class="MenuList MenuList_Top">
+          <div class="MenuItemIcon">
             <i class="fa-solid fa-utensils"></i>
             <a class="FooterLink FooterLinkBold" href="#">Proposer un restaurant</a>
-          </li>
-          <li class="MenuItem">
+          </div>
+          <div class="MenuItemIcon">
             <i class="fa-solid fa-handshake-angle"></i>
             <a class="FooterLink FooterLinkBold" href="#">Devenir partenaire</a>
-          </li>
-          <li class="MenuItem"><a class="FooterLink" href="#">Mentions légaes</a></li>
-          <li class="MenuItem"><a class="FooterLink" href="#">Contact</a></li>
-        </ul>
+          </div>
+        </div>
+
+        <div class="MenuList MenuList_Bottom">
+          <a class="FooterLink" href="#">Mentions légaes</a></li>
+          <a class="FooterLink" href="#">Contact</a>
+        </div>
+        
+      
       </nav>
-   </footer>
+  </footer>
 
 
   </body>
