@@ -195,11 +195,13 @@
 }
 
 
- .RestoMenuItem input[type="checkbox"]:checked  ~ label
+ .RestoMenuItem input[type="checkbox"]:checked  ~ label,
+ .RestoMenuItem:hover > label
 {
     width:calc(100% - 59px)
 }
-.RestoMenuItem input[type="checkbox"]:checked  ~ .Check
+.RestoMenuItem input[type="checkbox"]:checked  ~ .Check,
+.RestoMenuItem:hover > .Check
 {
     visibility: visible;
 }
