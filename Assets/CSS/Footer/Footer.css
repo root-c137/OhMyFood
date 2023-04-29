@@ -7,7 +7,7 @@ footer
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top:0px;
+    margin-top:0;
 }
 
 .FooterLogo
@@ -32,6 +32,8 @@ footer .fa-solid
 {
     display: flex;
     flex-direction: column;
+    z-index: 10;
+
 }
 
 .MenuFooter
