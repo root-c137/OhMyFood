@@ -114,8 +114,6 @@
     height: 100%;
     padding:18px;
     border-radius: 15px 0 0 15px;
-
-
 }
 
 .MenuItem_SubtitleAndPrice
@@ -195,13 +193,11 @@
 }
 
 
- .RestoMenuItem input[type="checkbox"]:checked  ~ label,
- .RestoMenuItem:hover > label
+ .RestoMenuItem input[type="checkbox"]:checked  ~ label
 {
-    width:calc(100% - 59px)
+    width:calc(100% - 59px);
 }
-.RestoMenuItem input[type="checkbox"]:checked  ~ .Check,
-.RestoMenuItem:hover > .Check
+.RestoMenuItem input[type="checkbox"]:checked  ~ .Check
 {
     visibility: visible;
 }
@@ -300,6 +296,15 @@
     {
         width:750px;
     }
+    .RestoMenuItem:hover > label
+    {
+        width:calc(100% - 59px);
+    }
+    .RestoMenuItem:hover > .Check
+    {
+        visibility: visible;
+    }
+
 }
 
 
