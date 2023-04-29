@@ -75,7 +75,26 @@
     flex-direction: column;
     justify-content: start;
     margin-bottom: 40px;
+    opacity: 0;
+    animation-name: AnimMenuSection;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
+
+.Entrees
+{
+    animation-delay: 0.8s;
+}
+.Plats
+{
+    animation-delay: 1s;
+}
+.Desserts
+{
+    animation-delay: 1.5s;
+}
+
 .SectionTitle
 {
     text-transform: uppercase;
@@ -202,6 +221,17 @@
     visibility: visible;
 }
 
+
+@keyframes AnimMenuSection {
+    from {
+        opacity:0;
+        margin-left:-1000px;
+    }
+    to {
+        opacity:1;
+        margin-left:0;
+    }
+}
 
 
 @media (min-width : 400px)
