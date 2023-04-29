@@ -43,7 +43,7 @@
 .FormControl_City
 {
     width:125px;
-    height:100%;
+    height:20px;
     padding-left:2px;
     padding-right:2px;
     border:none;
@@ -52,7 +52,7 @@
     text-align: center;
     font-weight: bold;
     color:#353535;
-    
+    z-index: 1;
 }
 
 .FormControl_City, .CurrentCity_Section
