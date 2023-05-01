@@ -32,7 +32,7 @@
     height: 16px;
     border-radius: 50%;
     background: #fff;
-    animation: 2s lds-grid infinite;
+    animation: 2s lds-grid linear infinite;
 }
 .lds-grid div:nth-child(1) {
     top: 8px;
